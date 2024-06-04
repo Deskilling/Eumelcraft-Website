@@ -3,7 +3,7 @@
 <head>
     <style>
         body {
-            background: url('images/background.png') no-repeat center center fixed;
+            background: url('images/background.png') no-repeat center center;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -13,7 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 120vh;
             margin: 0;
             padding: 0;
             text-align: center;
@@ -23,15 +23,50 @@
         .text-background {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
-            border-radius: 5px;
-            display: flex; /* Added */
-            justify-content: center; /* Added */
-            align-items: center; /* Added */
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         .text-background img {
-            max-width: 100%; /* Added */
-            height: auto; /* Added */
+            max-width: 100%;
+            height: auto;
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: rgba(38, 38, 38, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .box:active {
+            transform: scale(0.95);
+        }
+
+        .box button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #F3D250;
+            color: #000;
+            font-size: 1em;
+            cursor: pointer;
         }
 
         h1 {
@@ -44,6 +79,17 @@
 <body>
     <div class="text-background">
         <img src="images/logo.png">
+        <div class="boxes">
+            <div class="box">
+                <h2>Box 1</h2>
+                <button>Click me</button>
+            </div>
+            <div class="box">
+                <h2>Box 2</h2>
+                <button>Click me</button>
+            </div>
+            <!-- Add more boxes as needed -->
+        </div>
     </div>
 </body>
 </html>
