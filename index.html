@@ -1,6 +1,41 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <style>
+        body {
+            background: url('images/background.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: #FFFFFF;
+            font-family: Roboto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            filter: grayscale(80%) contrast(150%);
+        }
+
+        .text-background {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-family: Roboto;
+            font-size: 3em;
+            text-shadow: 0 0 10px #F3D250, 0 0 20px #F3D250, 0 0 30px #F3D250, 0 0 40px #F3D250;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
+    <div class="text-backround">
+        <img src="images/logo.png">
+    </div>
 </body>
 </html>
