@@ -1,0 +1,43 @@
+body {
+	background: url('images/Berge4.png') no-repeat center center;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #FFFFFF;
+	font-family: Roboto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 120vh;
+	margin: 0;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+    }
+	
+.snowflakes {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+.snowflake {
+    position: fixed;
+    top: -25px;
+    font-size: 24px;
+    color: white;
+    user-select: none;
+    animation: fall 10s linear infinite;
+}
+@keyframes fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+}
+		
+h1 {
+    font-family: Roboto;
+    font-size: 3em;
+    text-shadow: 0 0 10px #F3D250, 0 0 20px #F3D250, 0 0 30px #F3D250, 0 0 40px #F3D250;
+
+}
