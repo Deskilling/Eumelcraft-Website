@@ -1,92 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <style>
-        body {
-            background: url('images/Berge4.png') no-repeat center center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            color: #FFFFFF;
-            font-family: Roboto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 120vh;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        .text-background {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .text-background img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .boxes {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .box {
-            background-color: rgba(38, 38, 38, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px;
-            width: 200px;
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .box:active {
-            transform: scale(0.95);
-        }
-
-        .box button {
-            padding: 10px 20px;
-            border: none;
-            color: #000;
-            font-size: 1em;
-            cursor: pointer;
-        }
-
-        h1 {
-            font-family: Roboto;
-            font-size: 3em;
-            text-shadow: 0 0 10px #F3D250, 0 0 20px #F3D250, 0 0 30px #F3D250, 0 0 40px #F3D250;
-        }
-    </style>
+	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eumelcraft</title>
+    
 </head>
 <body>
-    <div class="text-background">
-        <img src="images/logo.png">
-        <div class="boxes">
-            <div class="box">
-                <h2>Box 1</h2>
-                <button>Click me</button>
-            </div>
-            <div class="box">
-                <h2>Box 2</h2>
-                <button>Click me</button>
-            </div>
-            <!-- Add more boxes as needed -->
-        </div>
-    </div>
+    <div class="snowflakes" aria-hidden="true"></div>
+
+    <script>
+        const snowflakeContainer = document.querySelector('.snowflakes');
+        const snowflakeCount = 150;
+
+        for (let i = 0; i < snowflakeCount; i++) {
+            const snowflake = document.createElement('div');
+            snowflake.className = 'snowflake';
+            snowflake.textContent = '❅';
+            snowflake.style.left = `${Math.random() * 100}vw`;
+            snowflake.style.animationDelay = `${Math.random() * 10}s`;
+            snowflake.style.fontSize = `${Math.random() * 10 + 10}px`;
+            snowflakeContainer.appendChild(snowflake);
+        }
+    </script>
 </body>
 </html>
