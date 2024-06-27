@@ -1,4 +1,5 @@
 body {
+	overflow: hidden;
 	background: url('images/Berge4.png') no-repeat center center;
     -webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -16,19 +17,22 @@ body {
 	background-attachment: fixed;
 	background-position: center; 
     }
-	
+
 .snowflakes {
     position: fixed;
     width: 100%;
     overflow: hidden;
 }
 .snowflake {
-    position: fixed;
-    top: -25px;
-    font-size: 24px;
+	text-shadow: 4px 4px 29px rgba(0,187,241,1);    
+	position: fixed;
+	top: -25px;
+    font-size: 14px;
     color: white;
     user-select: none;
+	overflow: hidden;
     animation: fall 10s linear infinite;
+	
 }
 @keyframes fall {
     0% { transform: translateY(0); }
