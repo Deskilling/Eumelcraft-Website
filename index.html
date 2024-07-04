@@ -10,16 +10,16 @@
 <body>
     <div class="snowflakes" aria-hidden="true"></div>
     <script>
-        const snowflakeContainer = document.querySelector('.snowflakes');
+        const snowflakeContainer = document.querySelector(".snowflakes");
         const snowflakeCount = 500;
 
         for (let i = 0; i < snowflakeCount; i++) {
-            const snowflake = document.createElement('div');
-            snowflake.className = 'snowflake';
-            snowflake.textContent = '*';
+            const snowflake = document.createElement("div");
+            snowflake.className = "snowflake";
+            snowflake.textContent = ".";
             snowflake.style.left = `${Math.random() * 100}vw`;
             snowflake.style.animationDelay = `${Math.random() * 20}s`;
-            snowflake.style.fontSize = `${Math.random() * 10 + 25}px`;
+            snowflake.style.fontSize = `${Math.random() * 15 + 35}px`;
             snowflakeContainer.appendChild(snowflake);
         }
     </script>

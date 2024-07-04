@@ -21,27 +21,25 @@ body {
 .snowflakes {
     position: fixed;
     width: 100%;
-    overflow: hidden;
-}
+    overflow: hidden;}
+	
 .snowflake {
-	text-shadow: 4px 4px 29px rgba(0,187,241,1);    
+	text-shadow: 4px 4px 29px rgba(0,187,241,1); 
 	position: fixed;
-	top: -25px;
-    font-size: 14px;
+	top: -10vh;
     color: white;
     user-select: none;
 	overflow: hidden;
-    animation: fall 10s linear infinite;
-	
+	animation: fall 10s linear infinite;
 }
+
 @keyframes fall {
     0% { transform: translateY(0); }
-    100% { transform: translateY(100vh); }
+    100% { transform: translateY(115vh)};
 }
-		
+
 h1 {
     font-family: Roboto;
-    font-size: 3em;
-    text-shadow: 0 0 10px #F3D250, 0 0 20px #F3D250, 0 0 30px #F3D250, 0 0 40px #F3D250;
-
+    font-size: 15px;
+    text-shadow: 0 0 10px #ADD8E6, 0 0 20px #ADD8E6, 0 0 30px #ADD8E6, 0 0 40px #ADD8E6;
 }
