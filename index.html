@@ -1,27 +1,109 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eumelcraft</title>
-    
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/css/hero.css">
+    <link rel="stylesheet" href="static/css/sections.css">
+    <link rel="stylesheet" href="static/css/animations.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="snowflakes" aria-hidden="true"></div>
-    <script>
-        const snowflakeContainer = document.querySelector(".snowflakes");
-        const snowflakeCount = 500;
+    <div id="loader-wrapper">
+        <div class="spinner"></div>
+    </div>
 
-        for (let i = 0; i < snowflakeCount; i++) {
-            const snowflake = document.createElement("div");
-            snowflake.className = "snowflake";
-            snowflake.textContent = ".";
-            snowflake.style.left = `${Math.random() * 100}vw`;
-            snowflake.style.animationDelay = `${Math.random() * 20}s`;
-            snowflake.style.fontSize = `${Math.random() * 15 + 35}px`;
-            snowflakeContainer.appendChild(snowflake);
-        }
-    </script>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Lorem ipsum <span class="highlight">dolor</span> sit amet</h1>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> <!-- Example subtitle -->
+            <div class="hero-buttons">
+                <a href="#about" class="primary-button">Learn More</a>
+                <a href="#features" class="secondary-button">See Features</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="snowflakes" aria-hidden="true"></div>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Idk</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fa fa-male"></i>
+                        <h3>Sigma</h3>
+                        <p>Sigmas only</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">idk anderes</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa fa-male"></i>
+                    </div>
+                    <h3>Auch Sigma</h3>
+                    <p>Jup</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Eumelcraft Logo">
+                    <span>Eumelcraft</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#features">Features</a>
+                </div>
+                <div class="footer-column">
+                    <h4>TUNG</h4>
+                    <a href="LINK BRUH">TUNG</a>
+                    <a href="#">TUNG</a>
+                    <a href="#">TUNG</a>
+                    <a href="#">TUNG</a>
+                    <a href="https://www.youtube.com/watch?v=IdtDSctsdl0">SAHUR</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <a href="mailto:PROTECTED EMAIL MATE">Email</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Eumelcraft. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="static/js/animations.js"></script>
+    <script src="static/js/main.js"></script>
+
 </body>
 </html>
