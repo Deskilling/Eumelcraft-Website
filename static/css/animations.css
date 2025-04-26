@@ -30,8 +30,6 @@
     background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
     pointer-events: none;
     z-index: 10000;
-    transform: translate(-50%, -50%);
-    animation: trailFade 0.5s linear forwards;
 }
 
 .smooth-line-trail {
